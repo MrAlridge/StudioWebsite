@@ -1,414 +1,515 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-<title>Ethereal by HTML5 UP</title>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-<link rel="stylesheet" href="assets/css/main.css" />
-<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<title>Home</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Acrostia Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--fonts-->
+<link href='http://fonts.useso.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+<!--//fonts-->
+
+<script src="js/responsiveslides.min.js"></script>
+	<script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	nav: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: true,
+      });
+    });
+  </script>
+  <!---->
+  <script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+					</script>
+
+
 </head>
-<body>
+<body> 
+<!--header-->
+<!--banner-->
+<div class="banner" id="home">
+	<div class="slider" >
+	    <div class="callbacks_container">
+	      <ul class="rslides" id="slider">
+	        <li>
+	          <img src="images/banner.jpg" alt="">
+			  <div class="banner-matter">
+			  <img class="img-responsive"  src="images/good.png" alt=" " />
+			 
+			  </div>
+	        </li>
+	        <li>
+	          <img src="images/banner1.jpg" alt=""> 
+			<div class="banner-matter">
+				<img  class="img-responsive" src="images/good.png" alt=" " />
+			  
+			  </div>			  
+	        </li>
+	        <li>
+	          <img src="images/banner2.jpg" alt="">
+				<div class="banner-matter">
+				<img class="img-responsive" src="images/good.png" alt=" " />
+			  
+			  </div>
+	        </li>
+	      </ul>
+	  </div>
+	  </div>
+	  </div>
+	<!---->
+	<div class="header" >
+			<div class="container">
+			<div class="fixed-header">
 
-<!-- Page Wrapper -->
-<div id="page-wrapper">
+			<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt=" " /></a>
+			</div>
+			
+				<div class="top-nav cssmenu">
+				<nav class="nav clearfix">
+					<a id="menu-toggle" class="anchor-link"><img src="images/menu.png" alt="" /></a>
+					<ul class="simple-toggle" id="nav">
+			        	<li class="current"><a href="#home" class="scroll">Home</a></li>		        	
+			        	<li ><a href="#services" class="scroll"> Services</a></li>
+						<li ><a href="#about" class="scroll">About</a></li>
+			        	<li><a href="#work" class="scroll">Our Work</a></li>
+			        	<li><a href="#contact" class="scroll">Contact</a></li>
+			        </ul>
+				</nav>
+				
+				<script type="text/javascript">
+					  $(document).ready(function() {
+					
+						$('#menu-toggle').click(function () {
+					      $('#nav').toggleClass('open');
+					      e.preventDefault();
+					    });
+					    
+					});
+				</script>
+				<!---->
+				<script src="js/jquery.nav.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#nav').onePageNav({
+			begin: function() {
+			console.log('start')
+			},
+			end: function() {
+			console.log('stop')
+			}
+		});
+	});
+	</script>
+				
+				</div>
+				<div class="clearfix"> </div>
+				</div>
+		</div>
+	</div>
+	
+		<script>
+		$(document).ready(function() {
+			 var navoffeset=$(".header").offset().top;
+			 $(window).scroll(function(){
+				var scrollpos=$(window).scrollTop(); 
+				if(scrollpos >=navoffeset){
+					$(".header").addClass("fixed");
+				}else{
+					$(".header").removeClass("fixed");
+				}
+			 });
+			 
+		});
+		</script>
+		<!-- /script-for sticky-nav -->
 
-	<!-- Wrapper -->
-		<div id="wrapper">
-
-			<!-- Panel (Banner) -->
-				<section class="panel banner right">
-					<div class="content color0 span-3-75">
-						<h1 class="major"><!--[-->Hello, my name<!--]--><br />
-						<!--[-->is Ethereal<!--]--></h1>
-						<p><!--[-->This is <strong>Ethereal</strong>, a free site template by AJ for HTML5 UP. It’s fully responsive, built on HTML5 and CSS3, and released entirely for free under the Creative Commons license. Hope you dig it :)<!--]--></p>
-						<ul class="actions">
-							<li><a href="#first" class="button special color1 circle icon fa-angle-right">Next</a></li>
-						</ul>
+<!--content-->
+	<div class="content">
+	<!---->
+		<div class="services" id="services">
+			<div class="container">
+				<div class="service-head">
+					<h3>OUR SERVICES</h3>
+					<span> Cras commodo mattis justo nec <b>lobortis</b>. Nam ut tellus lobortis, ullamcorper massa sit amet</span>
+					<p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>
+				</div>
+				<div class=" services-grid">
+					<div class="col-md-4 service-grid">
+						<a href="#"><img class="img-responsive" src="images/s1.png" alt=" " /></a>
+						<h5>Researching</h5>
+						<p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
 					</div>
-					<div class="image filtered span-1-75" data-position="25% 25%">
-						<img src="images/pic01.jpg" alt="" />
+					<div class="col-md-4 service-grid">
+						<a href="#"><img class="img-responsive" src="images/s2.png" alt=" " /></a>
+						<h5>Designing</h5>
+						<p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
 					</div>
-				</section>
-
-			<!-- Panel (Spotlight) -->
-				<section class="panel spotlight medium right" id="first">
-					<div class="content span-7">
-						<h2 class="major">Sed etiam aenean</h2>
-						<p>Mauris et ligula arcu. Proin dapibus convallis accumsan. Lorem maximus hendrerit orci, sit amet elementum massa hendrerit sed. Donec et ullamcorper ligula. Suspendisse amet potenti. Ut pretium libero eleifend euismod sed tristique. Quisque dictum magna risus, id ultricies justo sagittis vitae. Sed id odio tempor, porttitor elit amet, gravida hendrerit fringilla lorem ipsum dolor.</p>
+					<div class="col-md-4 service-grid">
+						<a href="#"><img class="img-responsive" src="images/s3.png" alt=" " /></a>
+						<h5>Development</h5>
+						<p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
 					</div>
-					<div class="image filtered tinted" data-position="top left">
-						<img src="images/pic02.jpg" alt="" />
+					<div class="col-md-4 service-grid ">
+						<a href="#"><img class="img-responsive" src="images/s4.png" alt=" " /></a>
+						<h5>Launch</h5>
+						<p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
 					</div>
-				</section>
-
-			<!-- Panel -->
-				<section class="panel color1">
-					<div class="intro joined">
-						<h2 class="major">Amet lorem</h2>
-						<p>Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar. Vivamus sed feugiat finibus. Duis amet bibendum amet sed. Duis mauris ex, dapibus sed ligula tempus volutpat magna etiam.</p>
-					</div>
-					<div class="inner">
-						<ul class="grid-icons three connected">
-							<li><span class="icon fa-diamond"><span class="label">Lorem</span></span></li>
-							<li><span class="icon fa-camera-retro"><span class="label">Ipsum</span></span></li>
-							<li><span class="icon fa-cog"><span class="label">Dolor</span></span></li>
-							<li><span class="icon fa-paper-plane"><span class="label">Sit</span></span></li>
-							<li><span class="icon fa-bar-chart"><span class="label">Amet</span></span></li>
-							<li><span class="icon fa-code"><span class="label">Nullam</span></span></li>
-						</ul>
-					</div>
-				</section>
-
-			<!-- Panel (Spotlight) -->
-				<section class="panel spotlight large left">
-					<div class="content span-5">
-						<h2 class="major">Magna amet tempus</h2>
-						<p>Mauris a cursus velit. Nunc lacinia sollicitudin egestas bibendum, magna dui bibendum ex, sagittis commodo enim risus sed magna nulla. Vestibulum ut consequat velit. Curabitur vitae libero lorem. Quisque iaculis porttitor blandit. Nullam quis sagittis maximus. Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar.</p>
-					</div>
-					<div class="image filtered tinted" data-position="top right">
-						<img src="images/pic03.jpg" alt="" />
-					</div>
-				</section>
-
-			<!-- Panel -->
-				<section class="panel">
-					<div class="intro color2">
-						<h2 class="major">Elit integer</h2>
-						<p>Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar. Vivamus sed feugiat finibus. Duis amet bibendum amet sed. Duis mauris ex, dapibus sed ligula tempus volutpat magna etiam.</p>
-					</div>
-					<div class="gallery">
-						<div class="group span-3">
-							<a href="images/gallery/fulls/01.jpg" class="image filtered span-3" data-position="bottom"><img src="images/gallery/thumbs/01.jpg" alt="" /></a>
-							<a href="images/gallery/fulls/02.jpg" class="image filtered span-1-5" data-position="center"><img src="images/gallery/thumbs/02.jpg" alt="" /></a>
-							<a href="images/gallery/fulls/03.jpg" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/thumbs/03.jpg" alt="" /></a>
-						</div>
-						<a href="images/gallery/fulls/04.jpg" class="image filtered span-2-5" data-position="top"><img src="images/gallery/thumbs/04.jpg" alt="" /></a>
-						<div class="group span-4-5">
-							<a href="images/gallery/fulls/05.jpg" class="image filtered span-3" data-position="top"><img src="images/gallery/thumbs/05.jpg" alt="" /></a>
-							<a href="images/gallery/fulls/06.jpg" class="image filtered span-1-5" data-position="center"><img src="images/gallery/thumbs/06.jpg" alt="" /></a>
-							<a href="images/gallery/fulls/07.jpg" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/thumbs/07.jpg" alt="" /></a>
-							<a href="images/gallery/fulls/08.jpg" class="image filtered span-3" data-position="top"><img src="images/gallery/thumbs/08.jpg" alt="" /></a>
-						</div>
-						<a href="images/gallery/fulls/09.jpg" class="image filtered span-2-5" data-position="right"><img src="images/gallery/thumbs/09.jpg" alt="" /></a>
-					</div>
-				</section>
-
-			<!-- Panel -->
-				<section class="panel color4-alt">
-					<div class="intro color4">
-						<h2 class="major">Contact</h2>
-						<p>Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar. Vivamus sed feugiat finibus. Duis amet bibendum amet sed. Duis mauris ex, dapibus sed ligula tempus volutpat magna etiam.</p>
-					</div>
-					<div class="inner columns divided">
-						<div class="span-3-25">
-							<form method="post" action="#">
-								<div class="field half">
-									<label for="name">Name</label>
-									<input type="text" name="name" id="name" />
-								</div>
-								<div class="field half">
-									<label for="email">Email</label>
-									<input type="email" name="email" id="email" />
-								</div>
-								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="4"></textarea>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="button special" /></li>
-								</ul>
-							</form>
-						</div>
-						<div class="span-1-5">
-							<ul class="contact-icons color1">
-								<li class="icon fa-twitter"><a href="#">@untitled-tld</a></li>
-								<li class="icon fa-facebook"><a href="#">facebook.com/untitled</a></li>
-								<li class="icon fa-snapchat-ghost"><a href="#">@untitled-tld</a></li>
-								<li class="icon fa-instagram"><a href="#">@untitled-tld</a></li>
-								<li class="icon fa-medium"><a href="#">medium.com/untitled</a></li>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		</div>
+		<!---->
+		<div class="team" id="about">
+			<div class="container">
+				<div class="team-head">
+					<h3>Who we are & what we do</h3>
+					<p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>
+					<a href="#" class="meet">Meet the team<span> </span></a>
+				</div>
+				<div class=" team-top">
+				<div class="col-md-4 team-top-grid">
+					<div class="team-grid">
+						<a href="#"><label> </label></a>
+						<h6>Anton Petrov</h6>
+						<small>General manager</small>
+						<ul class="social">
+								<li class="facebook"><a href="#"><span> </span> </a></li>
+								<li class="twitter"><a href="#"><span> </span> </a></li>
+								<li class="gmail"><a href="#"><span> </span> </a></li>
+								<li class="inline"><a href="#"><span> </span> </a></li>
 							</ul>
-						</div>
 					</div>
-				</section>
-
-			<!-- Panel -->
-				<section class="panel color2-alt">
-					<div class="intro color2">
-						<h2 class="major">Elements</h2>
-						<p>Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar. Vivamus sed feugiat finibus. Duis amet bibendum amet sed. Duis mauris ex, dapibus sed ligula tempus volutpat magna etiam. </p>
 					</div>
-					<div class="inner columns aligned">
-						<div class="span-2-75">
-
-							<h3 class="major">Text</h3>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-
-							<h1>Heading Level 1</h1>
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
-
+					<div class=" col-md-4 team-top-grid">
+					<div class="team-grid">
+						<a href="#"><label> </label></a>
+						<h6>Anton Petrov</h6>
+						<small>General manager</small>
+						<ul class="social">
+								<li class="facebook"><a href="#"><span> </span> </a></li>
+								<li class="twitter"><a href="#"><span> </span> </a></li>
+								<li class="gmail"><a href="#"><span> </span> </a></li>
+								<li class="inline"><a href="#"><span> </span> </a></li>
+							</ul>
+					</div>
+					</div>
+					<div class="col-md-4 team-top-grid">
+					<div class="team-grid">
+						<a href="#"><label> </label></a>
+						<h6>Anton Petrov</h6>
+						<small>General manager</small>
+						<ul class="social">
+								<li class="facebook"><a href="#"><span> </span> </a></li>
+								<li class="twitter"><a href="#"><span> </span> </a></li>
+								<li class="gmail"><a href="#"><span> </span> </a></li>
+								<li class="inline"><a href="#"><span> </span> </a></li>
+							</ul>
+					</div>
+					</div>
+					<div class="col-md-4 team-top-grid  ">
+					<div class="team-grid">
+						<a href="#"><label> </label></a>
+						<h6>Anton Petrov</h6>
+						<small>General manager</small>
+						<ul class="social">
+								<li class="facebook"><a href="#"><span> </span> </a></li>
+								<li class="twitter"><a href="#"><span> </span> </a></li>
+								<li class="gmail"><a href="#"><span> </span> </a></li>
+								<li class="inline"><a href="#"><span> </span> </a></li>
+							</ul>
+					</div>
+						
 						</div>
-						<div class="span-3">
-
-							<h4>Blockquote</h4>
-							<blockquote>Lorem ipsum dolor sit amet. Felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in vestibulum. Blandit adipiscing eu iaculis volutpat ac adipiscing volutpat ac adipiscing faucibus.</blockquote>
-
-							<h4>Preformatted</h4>
-							<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-print 'Iteration ' + (i++);
-deck.shuffle();
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+		<!---->
+		<div class="work" id="work">
+			<div class="container">
+				<div class="work-head">
+					<h3>our work</h3>
+					<p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>					
+				</div>
+				<div class=" work-top">					
+				<div class="by-type">
+					<h6>PORTFOLIO</h6>
+				</div>
+					<ul id="filters">
+						<li><span class="filter " data-filter="app card icon web">All</span></li>
+						<li><span class="filter" data-filter="app">Photography</span></li>
+						<li><span class="filter" data-filter="card"> Logo design </span></li>
+						<li><span class="filter" data-filter="icon">Web design</span></li>
+					</ul>
+					<div class="clearfix"> </div>
+				</div>
+					<div id="portfoliolist">
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper ">		
+							<a href="images/p1.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						    <img class="img-responsive" src="images/p1.jpg" alt=""  /> 
+							<span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>Aenean a elit</p>													
 						</div>
-						<div class="span-1-25">
+					</div>				
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/p2.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						    <img class="img-responsive" src="images/p2.jpg" alt=""  />
+						    <span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>Aenean a elit</p>
+		                </div>
+					</div>		
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/p3.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						     <img class="img-responsive" src="images/p3.jpg"  alt="" />
+						     <span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>Aenean a elit</p>
+		                </div>
+					</div>				
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper ">		
+							<a href="images/p4.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						     <img class="img-responsive" src="images/p4.jpg" alt=""  />
+						     <span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>Aenean a elit</p>	
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper ">		
+							<a href="images/p5.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						     <img class="img-responsive" src="images/p5.jpg" alt=""  />
+						    <span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>Aenean a elit</p>	
+		                </div>
+					</div>			
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/p6.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						     <img class="img-responsive" src="images/p6.jpg" alt=""  />
+						     
+						    <span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>Aenean a elit</p>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/p7.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						     <img class="img-responsive" src="images/p7.jpg" alt=""  />
+						     <span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>Aenean a elit</p>
+		                </div>
+					</div>
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/p1.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						     <img class="img-responsive" src="images/p1.jpg" alt=""  />
+						     <span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>Aenean a elit</p>
+		                </div>
+					</div>
+					<div class="clearfix"> </div>
+					</div>	
+			<!-- Script for gallery Here -->
+				<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+					$(function () {
+						
+						var filterList = {
+						
+							init: function () {
+							
+								// MixItUp plugin
+								// http://mixitup.io
+								$('#portfoliolist').mixitup({
+									targetSelector: '.portfolio',
+									filterSelector: '.filter',
+									effects: ['fade'],
+									easing: 'snap',
+									// call the hover effect
+									onMixEnd: filterList.hoverEffect()
+								});				
+							
+							},
+							
+							hoverEffect: function () {
+							
+								// Simple parallax effect
+								$('#portfoliolist .portfolio').hover(
+									function () {
+										$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+										$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+									},
+									function () {
+										$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+										$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+									}		
+								);				
+							
+							}
+				
+						};
+						
+						// Run the show!
+						filterList.init();
+					});	
+					</script>
+			<!-- Gallery Script Ends -->
+			</div>
+		</div>
+		<!---->
+	<link rel="stylesheet" href="css/swipebox.css">
+	<script src="js/jquery.swipebox.min.js"></script> 
+	    <script type="text/javascript">
+			jQuery(function($) {
+				$(".swipebox").swipebox();
+			});
+		</script>
 
-							<h3 class="major">Lists</h3>
+	<!---->
 
-							<h4>Unordered</h4>
+		<!---->
+		<div class="contact" id="contact">
+			<div class="container">
+				<div class="contact-head">
+					<h3>CONTACT US</h3>
+					<p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>					
+				</div>
+				<div class="contact-bottom">
+					<div class="col-md-3 sit-contact">
+						<h5>Address</h5>
+						<div class="contact-add">
 							<ul>
-								<li>Lorem ipsum dolor sit.</li>
-								<li>Dolor pulvinar etiam.</li>
-								<li>Etiam vel felis viverra.</li>
-							</ul>
-
-							<h4>Alternate</h4>
-							<ul class="alt">
-								<li>Lorem ipsum dolor sit.</li>
-								<li>Dolor pulvinar etiam.</li>
-								<li>Etiam vel felis viverra.</li>
-								<li>Felis enim feugiat.</li>
-							</ul>
-
-						</div>
-						<div class="span-1-5">
-
-							<h4>Ordered</h4>
-							<ol>
-								<li>Lorem ipsum dolor sit.</li>
-								<li>Dolor pulvinar etiam.</li>
-								<li>Etiam vel felis viverra.</li>
-								<li>Felis enim feugiat.</li>
-								<li>Etiam vel felis lorem.</li>
-							</ol>
-
-							<h4>Actions</h4>
-							<ul class="actions">
-								<li><a href="#" class="button special color2">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions vertical">
-								<li><a href="#" class="button special color2">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-
-						</div>
-						<div class="span-1-25">
-
-							<h4>Icons</h4>
-							<ul class="icons">
-								<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
-							</ul>
-
-							<h4>Contact Icons</h4>
-							<ul class="contact-icons color2">
-								<li class="icon fa-twitter"><a href="#">Twitter</a></li>
-								<li class="icon fa-facebook"><a href="#">Facebook</a></li>
-								<li class="icon fa-instagram"><a href="#">Instagram</a></li>
-								<li class="icon fa-github"><a href="#">GitHub</a></li>
-								<li class="icon fa-medium"><a href="#">Medium</a></li>
-							</ul>
-
-						</div>
-						<div class="span-3">
-							<h3 class="major">Table</h3>
-							<h4>Default</h4>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</div>
-						<div class="span-3">
-							<h4>Alternate</h4>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</div>
-						<div class="span-2-25">
-							<h3 class="major">Buttons</h3>
-							<ul class="actions">
-								<li><a href="#" class="button special color2">Special</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button large">Large</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button special color2 icon fa-cog">Icon</a></li>
-								<li><a href="#" class="button icon fa-diamond">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button special color2 disabled">Disabled</span></li>
-								<li><span class="button disabled">Disabled</span></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button special color2 circle icon fa-cog">Icon</a></li>
-								<li><a href="#" class="button circle icon fa-diamond">Icon</a></li>
+								<li><span>Acrostia</span></li>
+								<li>Sevenoaks Rd</li>
+								<li>Sevenoaks TN14 7HR, UK</li>	
 							</ul>
 						</div>
-						<div class="span-4-5">
-							<h3 class="major">Form</h3>
-							<form method="post" action="#">
-								<div class="field third">
-									<label for="demo-name">Name</label>
-									<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-								</div>
-								<div class="field third">
-									<label for="demo-email">Email</label>
-									<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-								</div>
-								<div class="field third">
-									<label for="demo-category">Category</label>
-									<div class="select-wrapper">
-										<select name="demo-category" id="demo-category">
-											<option value="">-</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-								</div>
-								<div class="field quarter">
-									<input type="radio" id="demo-priority-low" name="demo-priority" class="color2" checked />
-									<label for="demo-priority-low">Low Priority</label>
-								</div>
-								<div class="field quarter">
-									<input type="radio" id="demo-priority-high" name="demo-priority" class="color2" />
-									<label for="demo-priority-high">High Priority</label>
-								</div>
-								<div class="field quarter">
-									<input type="checkbox" id="demo-copy" name="demo-copy" class="color2" />
-									<label for="demo-copy">Email a copy</label>
-								</div>
-								<div class="field quarter">
-									<input type="checkbox" id="demo-human" name="demo-human" class="color2" checked />
-									<label for="demo-human">Not a robot</label>
-								</div>
-								<div class="field">
-									<label for="demo-message">Message</label>
-									<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="2"></textarea>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="special color2" /></li>
-									<li><input type="reset" value="Reset" /></li>
-								</ul>
-							</form>
+						<div class="contact-in">
+						<ul class="phone">
+							<li>Phone:  <span>+44 555 555 555</span></li>
+							<li>Fax:  <span>+44 556  555 555</span></li>
+							<li>E-mail:  <a href="mailto:info@example.com">info@acrostia.com </a></li>
+							<li>Skype:  <span>Acrostia</span></li>	
+						</ul>							
 						</div>
+						
 					</div>
-				</section>
+					<div class="col-md-3">
+						<div class="map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29266055.398148097!2d133.28132295!3d-26.43907425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b2bfd076787c5df%3A0x538267a1955b1352!2sAustralia!5e0!3m2!1sen!2sin!4v1414839600665"></iframe>
+						</div>						
+					</div>
+					<div class="col-md-6 contact-into">
+						<h5>Ask a question</h5>
+						<form>
+					<div class="contact-grid">
+						<div class="col-md-6 contact-us">
+							<input type="text" value="Name" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Name';}">
+						</div>
+						<div class="col-md-6 contact-us">
+							<input type="text" value="Email-id" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Email-id';}">
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<textarea cols="77" rows="6" value=" " onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+					<div class="send ">
+						<input type="submit" value="SEND" >
+					</div>
+				</form>
 
-			<!-- Copyright -->
-				<div class="copyright">Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+
+			</div>
+		</div>
+	</div>	
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+				<ul class="social-icons">
+					<li><a href="#"><span> </span> </a></li>
+					<li class="twitter"><a href="#"><span> </span></a></li>
+					<li class="gmail"><a href="#"><span> </span> </a></li>
+					<li class="print"><a href="#"><span> </span> </a></li>
+				</ul>
+				<p class="footer-class">Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+		</div>	
+		  <script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 
 		</div>
 
-</div>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/main.js"></script>
-
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
 </body>
 </html>
